@@ -1,0 +1,271 @@
+body
+    font-family: 'Poppins', sans-serif
+button, input
+    outline: none
+
+
+
+.header
+    height: 156px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &_logo
+        margin-left: 70px
+        width: 206px
+        img
+            width: 206px
+            height: 101px
+    &_links
+        width: 580px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-right: 40px
+        &_link
+            // margin-right: 94px
+            font-style: normal
+            font-weight: 600
+            font-size: 16px
+            line-height: 28px
+            text-align: center
+            letter-spacing: 0.2px
+            color: #252B42
+            text-decoration: none
+            transition: 0.5s all
+        &_link:hover
+            opacity: 0.5
+    &_menu
+        display: none
+        position: relative
+        width: 16px
+        height: 2px
+        background: #737373
+        opacity: 0.6
+        border-radius: 20px
+    &_menu:after
+        content: ''
+        display: block
+        position: absolute
+        top: 5px
+        width: 16px
+        height: 2px
+        background: #737373
+        border-radius: 20px
+    &_menu:before        
+        content: ''
+        display: block
+        position: absolute
+        top: -5px
+        width: 16px
+        height: 2px
+        background: #737373
+        border-radius: 20px
+.active 
+    color: #FA4A0C    
+.subheader
+    height: 619px
+    background-image: url('../img/subheader-bg.jpg') 
+    &_title
+        padding-top: 73px
+        height: 36px
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 36px
+        text-align: center
+        letter-spacing: 0.1px
+        color: #F7F7F7
+    &_text
+        margin: 0 auto
+        width: 940px
+        height: 160px
+        font-style: normal
+        font-weight: bold
+        font-size: 58px
+        line-height: 80px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #FFFFFF
+    &_descr
+        margin-top: 17px
+        font-style: normal
+        font-weight: 500
+        font-size: 24px
+        line-height: 38px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #F7F7F7
+    &_btns
+        position: relative
+        z-index: 10
+        margin: 54px auto
+        width: 506px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__playstore
+            width: 236px
+            height: 68px
+            background: #FA4A0C
+            box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2)
+            border-radius: 30px
+            border: 1px solid #FA4A0C
+            cursor: pointer
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 36px
+            letter-spacing: 0.1px
+            color: #FFFFFF
+            transition: 0.5s all
+        &__playstore:hover
+            background: #d63900
+        &__appstore
+            width: 236px
+            height: 68px
+            border: 1px solid #FFFFFF
+            box-sizing: border-box
+            border-radius: 30px
+            background: none
+            cursor: pointer
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 36px
+            letter-spacing: 0.1px
+            color: #FFFFFF
+            transition: 0.5s all
+        &__appstore:hover
+            background: #FFFFFF 
+            color: #000000
+.phone
+    img
+        width: 548px
+        height: 640px
+        margin-top: -240px
+        margin-left: 50%
+        transform: translateX(-50%)
+    &_line
+        margin: 0 auto
+        width: 884px
+        height: 0
+        border: 1px solid #E4E4E4
+.about
+    padding-top: 72px
+    &_line
+        display: none
+    &_title
+        margin: 0 auto
+        font-weight: 600
+        text-align: center
+        font-size: 44px
+        line-height: 36px
+        letter-spacing: 0.1px
+        color: #000000
+        opacity: 0.8
+    &_block
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin: 0 auto        
+        width: 1041px
+        height: 525px
+        img
+            height: 100%
+    &_block:first-child
+        margin-top: 137px
+    &_text
+        width: 568px
+    &_head
+        width: 232px
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 36px
+        letter-spacing: 0.1px
+        color: #FA4A0C
+    &_descr
+        width: 561px
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 57px
+        letter-spacing: 0.2px
+        color: #252B42
+    &_subtitle
+        width: 467px
+        font-style: normal
+        font-weight: 500
+        font-size: 24px
+        line-height: 38px
+        letter-spacing: 0.2px
+        color: #737373
+
+.footer
+    height: 516px
+    background: url('../img/footer-bg.jpg') center no-repeat 
+    &_text
+        padding-top: 140px
+        margin: 0 auto
+        width: 503px
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 57px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #fff
+    &_title
+        width: 860px
+        margin: 0 auto
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 38px
+        text-align: center
+        letter-spacing: 0.2px
+        color: #fff
+    &_btns
+        margin: 0 auto
+        margin-top: 60px
+        width: 362px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__playstore, &__appstore
+            width: 173px
+            border-radius: 10px
+footer
+    .block
+        margin: 0 auto
+        padding-top: 38px
+        padding-bottom: 53px
+        width: 1210px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        &_icons
+            width: 170px
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &_link
+            text-decoration: none
+            img
+                width: 39px
+                height: 39px
+        &_link:hover
+            opacity: 0.8
+        &_mail
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 18px
+            text-align: right
+            letter-spacing: 0.1px
+            color: #5C5C5C
+            text-decoration: none
+@import "media"
+    
+    
